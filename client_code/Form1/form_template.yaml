@@ -4,40 +4,42 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: never, col_spacing: medium, spacing_above: small, col_widths: '{}', spacing_below: small,
+    background: ''}
   name: column_panel_1
   layout_properties: {slot: default}
   components:
   - type: Label
-    properties: {role: display, align: center, tooltip: '', border: '', foreground: '',
+    properties: {role: headline, align: center, tooltip: '', border: '', foreground: '',
       visible: true, text: "Minhas Tarefas \ud83d\ude2c", font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: true, underline: false, icon: ''}
     name: titulo
-    layout_properties: {grid_position: 'VAYUGF,TWWAIF'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_1
-    layout_properties: {grid_position: 'PUGRUI,AWXNRX'}
+    layout_properties: {grid_position: 'AOWBUY,LWLQAZ'}
   - type: TextBox
     properties: {role: outlined, align: center, hide_text: false, tooltip: '', placeholder: Digite sua tarefa,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: tarefas
-    layout_properties: {grid_position: 'TMRDNA,ATOOQU'}
+    layout_properties: {grid_position: 'POELGD,WLKYKA'}
   - type: Button
     properties: {role: filled-button, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: "Salvar \ud83d\udcdd", font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: true, underline: false, icon: ''}
     name: button_1
-    layout_properties: {grid_position: 'TMRDNA,VPGZYY'}
+    layout_properties: {grid_position: 'POELGD,HBZYTT'}
     event_bindings: {click: button_1_click}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_1
+    layout_properties: {grid_position: 'HZNKVR,FFUMCB'}
   - type: RepeatingPanel
     properties: {role: outlined-card, tooltip: '', border: '', foreground: '', items: null,
       visible: true, spacing_above: small, spacing_below: small, item_template: Form1.ItemTemplate1,
       background: ''}
     name: repeating_panel_1
-    layout_properties: {grid_position: 'KDKVPB,XFUJFJ'}
+    layout_properties: {grid_position: 'ECLXRL,AFGCRD'}
     data_bindings: []
