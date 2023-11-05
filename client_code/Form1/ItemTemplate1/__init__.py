@@ -9,5 +9,10 @@ class ItemTemplate1(ItemTemplate1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+  def apagar_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.item.delete()
+    self.remove_from_parent()
+
 
   

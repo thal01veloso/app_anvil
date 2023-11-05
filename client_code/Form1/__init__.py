@@ -15,6 +15,6 @@ class Form1(Form1Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     result = app_tables.tarefas.add_row(tarefa=self.tarefas.text,Status=True)
-    l = list(self.repeating_panel_1.items) +[result]
-    self.repeating_panel_1.text = l
+    l = list(self.repeating_panel_1.items)+[result]
+    self.repeating_panel_1.items = l
 
