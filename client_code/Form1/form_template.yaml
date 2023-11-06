@@ -5,7 +5,7 @@ container:
 components:
 - type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: tablet, col_spacing: medium, spacing_above: small, col_widths: '{"HXDTHR":40,"LEHZBB":20,"MSRTMC":35,"AXEUNC":15,"INDIFR":20}',
+    wrap_on: tablet, col_spacing: medium, spacing_above: small, col_widths: '{"HXDTHR":40,"LEHZBB":20,"MSRTMC":40,"AXEUNC":10,"INDIFR":20}',
     spacing_below: small, background: ''}
   name: column_panel_1
   layout_properties: {slot: default}

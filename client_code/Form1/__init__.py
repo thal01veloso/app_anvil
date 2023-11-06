@@ -17,4 +17,5 @@ class Form1(Form1Template):
     result = app_tables.tarefas.add_row(tarefa=self.tarefas.text,Status=True)
     l = list(self.repeating_panel_1.items)+[result]
     self.repeating_panel_1.items = l
+    self.tarefas.text=""
 
